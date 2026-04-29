@@ -1,0 +1,397 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-outfit: "Outfit", sans-serif;
+  --color-primary: #FF3C00;
+  --color-dark: #0A0A0A;
+  --color-light: #FEF7EF;
+  --color-white: #FFFFFF;
+}
+
+@layer base {
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, .font-outfit {
+    font-family: 'Outfit', sans-serif;
+  }
+}
+
+@layer components {
+    /* Botão Brutalist Clean */
+    .btn-solid {
+        transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+        border: 2px solid var(--color-dark);
+        box-shadow: 4px 4px 0px var(--color-dark);
+    }
+    .btn-solid:hover {
+        transform: translate(-2px, -2px);
+        box-shadow: 6px 6px 0px var(--color-dark);
+    }
+    .btn-solid:active {
+        transform: translate(1px, 1px);
+        box-shadow: 2px 2px 0px var(--color-dark);
+    }
+    .btn-solid:disabled {
+        opacity: 0.7;
+        cursor: not-allowed;
+        transform: none;
+        box-shadow: 4px 4px 0px var(--color-dark);
+    }
+
+    /* Nav Scroll State */
+    .nav-scrolled {
+        background: rgba(10, 10, 10, 0.95);
+        backdrop-filter: blur(10px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    /* Marquee Focado em Tráfego (Mais contido) */
+    .marquee-container {
+        overflow: hidden;
+        white-space: nowrap;
+        width: 100%;
+        background-color: var(--color-primary);
+        color: var(--color-light);
+        padding: 12px 0;
+        border-top: 2px solid var(--color-dark);
+        border-bottom: 2px solid var(--color-dark);
+    }
+    .marquee-content {
+        display: inline-block;
+        animation: marquee 20s linear infinite;
+        will-change: transform;
+    }
+    @keyframes marquee {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-50%); }
+    }
+
+    /* Cartões Clean Brutalism */
+    .brutalist-card {
+        background: var(--color-light);
+        border: 2px solid var(--color-dark);
+        border-radius: 0px; 
+        box-shadow: 6px 6px 0px var(--color-dark);
+        transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        color: var(--color-dark);
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+    }
+    .brutalist-card:hover {
+        transform: translate(-4px, -4px);
+        box-shadow: 10px 10px 0px var(--color-primary);
+    }
+
+    /* Input Clean Brutalism */
+    .brutalist-input {
+        width: 100%;
+        background: var(--color-white);
+        border: 2px solid var(--color-dark);
+        padding: 1rem 1.25rem;
+        font-size: 1.05rem;
+        font-family: 'Inter', sans-serif;
+        font-weight: 500;
+        color: var(--color-dark);
+        outline: none;
+        box-shadow: 4px 4px 0px rgba(0,0,0,0.1);
+        transition: all 0.2s;
+    }
+    .brutalist-input:focus {
+        box-shadow: 6px 6px 0px var(--color-primary);
+        transform: translate(-2px, -2px);
+    }
+    .brutalist-input::placeholder {
+        color: rgba(0,0,0,0.3);
+        font-weight: 400;
+    }
+
+    .card-number-bg {
+        position: absolute;
+        bottom: -10%;
+        right: -5%;
+        font-size: 12rem;
+        font-family: 'Outfit', sans-serif;
+        font-weight: 900;
+        color: rgba(0,0,0,0.03);
+        line-height: 1;
+        z-index: -1;
+        pointer-events: none;
+        transition: color 0.3s;
+    }
+    .brutalist-card:hover .card-number-bg {
+        color: rgba(255, 60, 0, 0.06);
+    }
+
+    .highlight-pill {
+        background-color: var(--color-primary);
+        color: var(--color-dark);
+        padding: 0.1em 0.3em;
+        border-radius: 6px; 
+        display: inline-block;
+        transform: rotate(-2deg);
+        border: 2px solid var(--color-dark);
+        box-shadow: 4px 4px 0px rgba(0,0,0,0.8);
+        transition: transform 0.3s;
+    }
+    .highlight-pill:hover {
+        transform: rotate(0deg) scale(1.02);
+    }
+
+    .dot-pattern {
+        background-image: radial-gradient(rgba(255,255,255,0.08) 1px, transparent 1px);
+        background-size: 12px 12px;
+    }
+    .dot-pattern-dark {
+        background-image: radial-gradient(rgba(0,0,0,0.08) 1px, transparent 1px);
+        background-size: 12px 12px;
+    }
+
+    .noise-overlay {
+        position: fixed;
+        inset: 0;
+        background: url('https://grainy-gradients.vercel.app/noise.svg');
+        opacity: 0.04;
+        pointer-events: none;
+        z-index: 50;
+        mix-blend-mode: multiply;
+    }
+
+    .thick-divider {
+        height: 2px;
+        background-color: var(--color-dark);
+        width: 100%;
+    }
+
+    /* Lucide Icons - Minimalist Weight */
+    .lucide {
+        stroke-width: 1.5px;
+    }
+
+    @keyframes spin-slow {
+        from { transform: translate(-50%, -50%) rotate(0deg); }
+        to { transform: translate(-50%, -50%) rotate(360deg); }
+    }
+    .animate-spin-slow-bg {
+        animation: spin-slow 40s linear infinite;
+    }
+    @keyframes spin-slow-reverse {
+        from { transform: translate(-50%, -50%) rotate(360deg); }
+        to { transform: translate(-50%, -50%) rotate(0deg); }
+    }
+    .animate-spin-slow-reverse-bg {
+        animation: spin-slow-reverse 50s linear infinite;
+    }
+
+    /* ============================================
+       TRAFFIC VIZ (Header Animation Clean Brutalism)
+       ============================================ */
+    .traffic-viz-wrapper {
+        position: relative;
+        width: 100%;
+        max-width: 520px;
+        aspect-ratio: 1;
+        margin: 0 auto;
+    }
+
+    .traffic-svg {
+        width: 100%;
+        height: 100%;
+    }
+
+    .funnel-outline {
+        fill: rgba(255, 60, 0, 0.02);
+        stroke: var(--color-primary);
+        stroke-width: 1.5;
+        stroke-dasharray: 4 4;
+        opacity: 0.2;
+    }
+
+    .flow-path {
+        fill: none;
+        stroke: var(--color-primary);
+        stroke-width: 1.5;
+        stroke-dasharray: 6 4;
+        opacity: 0.3;
+        animation: flowDash 2s linear infinite;
+    }
+    .flow-path:nth-child(3) { animation-delay: -0.7s; opacity: 0.2; }
+    .flow-path:nth-child(4) { animation-delay: -1.2s; opacity: 0.4; }
+
+    @keyframes flowDash {
+        to { stroke-dashoffset: -20; }
+    }
+
+    .node-ring {
+        fill: none;
+        stroke: var(--color-primary);
+        stroke-width: 1.5;
+        opacity: 0.25;
+    }
+
+    .node-core {
+        fill: var(--color-primary);
+        opacity: 0.9;
+    }
+
+    .node-label {
+        font-family: 'Inter', sans-serif;
+        font-size: 11px;
+        fill: rgba(255, 255, 255, 0.8); 
+        text-anchor: middle;
+        font-weight: 600;
+        letter-spacing: 0.04em;
+    }
+
+    .travel-dot {
+        fill: var(--color-primary);
+        opacity: 0.8;
+    }
+
+    /* AI Output Formatting */
+    .ai-output-content h3 { font-family: 'Outfit', sans-serif; font-weight: 800; font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--color-dark); text-transform: uppercase; }
+    .ai-output-content p { margin-bottom: 0.75rem; color: var(--color-dark); opacity: 0.8; font-weight: 500; }
+    .ai-output-content strong { color: var(--color-primary); font-weight: 700; }
+    .ai-output-content ul { list-style-type: square; padding-left: 1.25rem; margin-bottom: 0.75rem; color: var(--color-dark); opacity: 0.8; font-weight: 500; }
+    .ai-output-content li { margin-bottom: 0.4rem; }
+
+    .loader-block {
+        width: 16px;
+        height: 32px;
+        background: var(--color-primary);
+        display: inline-block;
+        animation: pulseBlock 1s infinite alternate;
+    }
+    @keyframes pulseBlock {
+        0% { opacity: 0.3; transform: scaleY(0.8); }
+        100% { opacity: 1; transform: scaleY(1.2); }
+    }
+
+    /* ============================================
+       FLOATING GLOBAL BADGE (Selo de Autoridade)
+       ============================================ */
+    .global-floating-badge {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        width: 110px;
+        height: 110px;
+        z-index: 45;
+        border-radius: 50%;
+        background: rgba(10, 10, 10, 0.7);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 2px solid rgba(255, 255, 255, 0.05);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        animation: floatGlobal 4s ease-in-out infinite;
+        transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease, border-color 0.3s ease;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    }
+    .global-floating-badge:hover {
+        transform: translateY(-5px) scale(1.05);
+        box-shadow: 0 15px 40px rgba(255, 60, 0, 0.25);
+        border-color: rgba(255, 60, 0, 0.4);
+    }
+    @keyframes floatGlobal {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-10px); }
+        100% { transform: translateY(0px); }
+    }
+    .global-badge-svg {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        animation: spinBadge 15s linear infinite;
+    }
+    @keyframes spinBadge {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+    }
+    .global-badge-core {
+        width: 46px;
+        height: 46px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 3px 3px 0px var(--color-dark);
+        z-index: 2;
+        transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        overflow: hidden;
+        background: var(--color-dark);
+    }
+    .global-floating-badge:hover .global-badge-core {
+        transform: scale(1.1) rotate(15deg);
+    }
+    @media (max-width: 768px) {
+        .global-floating-badge {
+            width: 85px;
+            height: 85px;
+            bottom: 20px;
+            right: 20px;
+        }
+        .global-badge-core {
+            width: 36px;
+            height: 36px;
+        }
+    }
+
+    /* ============================================
+       WHATSAPP FLOATING BUTTON (Via Rápida Comercial)
+       ============================================ */
+    .whatsapp-float {
+        position: fixed;
+        bottom: 160px;
+        right: 55px;
+        width: 60px;
+        height: 60px;
+        background-color: #25D366;
+        border: 2px solid var(--color-dark);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 45;
+        box-shadow: 4px 4px 0px rgba(10,10,10,1);
+        transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease;
+        animation: floatWA 4s ease-in-out infinite 1s;
+    }
+    .whatsapp-float:hover {
+        transform: translateY(-4px) scale(1.05);
+        box-shadow: 6px 6px 0px rgba(10,10,10,1);
+    }
+    .whatsapp-icon-svg {
+        width: 32px;
+        height: 32px;
+        fill: var(--color-dark);
+    }
+    @keyframes floatWA {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-6px); }
+        100% { transform: translateY(0px); }
+    }
+    @media (max-width: 768px) {
+        .whatsapp-float {
+            width: 50px;
+            height: 50px;
+            bottom: 115px;
+            right: 37px;
+        }
+        .whatsapp-icon-svg {
+            width: 26px;
+            height: 26px;
+        }
+    }
+}
