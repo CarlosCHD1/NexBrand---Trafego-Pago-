@@ -9,17 +9,17 @@ import { motion } from 'motion/react';
 
 // SVG ICON: Nexbrand Circular Gradient Favicon
 const FaviconSvg = ({ className = "w-8 h-8" }) => (
-  <img src="/logo-icon.png" className={className} alt="Nexbrand" />
+  <img src="/logo-icon.png.png" className={className} alt="Nexbrand" />
 );
 
 // LOGO: Nexbrand Full Logo (Navbar)
 const LogoTextSvg = ({ className = "h-8" }) => (
-  <img src="/logo-light.png" className={className} alt="Nexbrand" />
+  <img src="/logo-light.png.png" className={className} alt="Nexbrand" />
 );
 
 // LOGO: Nexbrand Full Logo (Footer)
 const LogoTextDarkSvg = ({ className = "h-8" }) => (
-  <img src="/logo-dark.png" className={className} alt="Nexbrand" />
+  <img src="/logo-dark.png.png" className={className} alt="Nexbrand" />
 );
 
 const fadeInUp: any = {
@@ -115,11 +115,11 @@ const RevealRight = ({ children, className }: any) => (
 
 const MarqueeItem = () => (
   <>
-    <span>GestÃ£o de TrÃ¡fego</span> <span className="text-light/40">â¢</span>
-    <span>OtimizaÃ§Ã£o de ROAS</span> <span className="text-light/40">â¢</span>
-    <span>Escala de Vendas</span> <span className="text-light/40">â¢</span>
-    <span>Tracking AvanÃ§ado</span> <span className="text-light/40">â¢</span>
-    <span>Performance</span> <span className="text-light/40">â¢</span>
+    <span>GestÃÂ£o de TrÃÂ¡fego</span> <span className="text-light/40">Ã¢ÂÂ¢</span>
+    <span>OtimizaÃÂ§ÃÂ£o de ROAS</span> <span className="text-light/40">Ã¢ÂÂ¢</span>
+    <span>Escala de Vendas</span> <span className="text-light/40">Ã¢ÂÂ¢</span>
+    <span>Tracking AvanÃÂ§ado</span> <span className="text-light/40">Ã¢ÂÂ¢</span>
+    <span>Performance</span> <span className="text-light/40">Ã¢ÂÂ¢</span>
   </>
 );
 
@@ -181,11 +181,11 @@ export default function App() {
         </svg>
       </a>
 
-      <a href="https://wa.me/5566999825409" target="_blank" rel="noreferrer" onClick={() => handleTrackEvent('Contact', 'Selo_Flutuante_Centro')} className="global-floating-badge group" aria-label="Agendar DiagnÃ³stico">
+      <a href="https://wa.me/5566999825409" target="_blank" rel="noreferrer" onClick={() => handleTrackEvent('Contact', 'Selo_Flutuante_Centro')} className="global-floating-badge group" aria-label="Agendar DiagnÃÂ³stico">
         <svg className="global-badge-svg text-white/60 group-hover:text-primary transition-colors duration-300" viewBox="0 0 100 100">
             <path id="globalBadgePath" d="M 50, 50 m -34, 0 a 34,34 0 1,1 68,0 a 34,34 0 1,1 -68,0" fill="none" />
             <text className="font-black uppercase text-[10.5px] fill-current" style={{letterSpacing: '0.08em'}}>
-                <textPath href="#globalBadgePath" textLength="213">NEXBRAND â¢ PERFORMANCE â¢ </textPath>
+                <textPath href="#globalBadgePath" textLength="213">NEXBRAND Ã¢ÂÂ¢ PERFORMANCE Ã¢ÂÂ¢ </textPath>
             </text>
         </svg>
         <div className="global-badge-core text-white flex items-center justify-center">
@@ -218,27 +218,27 @@ export default function App() {
                     <RevealUp delay={0.1}>
                         <div className="inline-flex items-center gap-2 bg-white text-dark px-3 py-1.5 font-bold text-[10px] md:text-xs uppercase tracking-widest mb-8 border-2 border-dark shadow-[2px_2px_0px_#FF3C00] transform -rotate-1">
                             <Radar className="w-3.5 h-3.5 text-primary animate-pulse" />
-                            CaptaÃ§Ã£o de Pacientes
+                            CaptaÃÂ§ÃÂ£o de Pacientes
                         </div>
                     </RevealUp>
 
                     <RevealUp delay={0.2}>
                         <h1 className="text-5xl md:text-7xl lg:text-[5.5rem] font-black leading-[0.95] tracking-normal mb-8 uppercase">
-                            Quem nÃ£o aparece,<br/>
-                            <span className="highlight-pill mt-3 text-white">nÃ£o vende.</span>
+                            Quem nÃÂ£o aparece,<br/>
+                            <span className="highlight-pill mt-3 text-white">nÃÂ£o vende.</span>
                         </h1>
                     </RevealUp>
 
                     <RevealUp delay={0.3}>
                         <p className="text-lg md:text-xl text-white/70 max-w-lg mb-10 font-medium leading-relaxed flex items-start gap-3">
                             <Crosshair className="w-6 h-6 text-primary flex-shrink-0 mt-1 opacity-80" />
-                            <span>GestÃ£o de trÃ¡fego e posicionamento para clÃ­nicas de estÃ©tica e profissionais que desejam escalar o faturamento e lotar a agenda.</span>
+                            <span>GestÃÂ£o de trÃÂ¡fego e posicionamento para clÃÂ­nicas de estÃÂ©tica e profissionais que desejam escalar o faturamento e lotar a agenda.</span>
                         </p>
                     </RevealUp>
 
                     <RevealUp delay={0.4} className="flex flex-col sm:flex-row items-start gap-6">
                         <a href="https://wa.me/5566999825409" target="_blank" rel="noreferrer" onClick={() => handleTrackEvent('Schedule', 'Hero_Agendar_Sessao')} className="bg-primary text-white px-8 py-4 font-bold text-sm md:text-base tracking-widest uppercase btn-solid inline-flex items-center gap-3">
-                            Agendar SessÃ£o 
+                            Agendar SessÃÂ£o 
                             <ArrowRight className="w-5 h-5" />
                         </a>
                     </RevealUp>
@@ -262,7 +262,7 @@ export default function App() {
                                 <iframe
                                     className="absolute inset-0 w-full h-full"
                                     src="https://www.youtube.com/embed/VRjIVQsGcb8?rel=0&modestbranding=1"
-                                    title="ApresentaÃ§Ã£o Nexbrand"
+                                    title="ApresentaÃÂ§ÃÂ£o Nexbrand"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                     allowFullScreen
                                     style={{ border: 'none' }}
@@ -298,23 +298,23 @@ export default function App() {
                 </h2>
                 <div className="border-l-4 border-dark pl-5 space-y-4 py-1">
                     <p className="text-dark/90 text-lg md:text-xl font-bold leading-relaxed">
-                        O problema nÃ£o Ã© o seu procedimento, nem o seu espaÃ§o. A sua campanha estÃ¡ atraindo curiosos. Ã preciso um diagnÃ³stico cirÃºrgico.
+                        O problema nÃÂ£o ÃÂ© o seu procedimento, nem o seu espaÃÂ§o. A sua campanha estÃÂ¡ atraindo curiosos. ÃÂ preciso um diagnÃÂ³stico cirÃÂºrgico.
                     </p>
                     <p className="text-dark/70 text-base font-medium leading-relaxed">
-                        Acabe com as promoÃ§Ãµes que desvalorizam o serviÃ§o e contatos desqualificados. Ã hora de atrair quem busca e pode pagar pelo seu valor.
+                        Acabe com as promoÃÂ§ÃÂµes que desvalorizam o serviÃÂ§o e contatos desqualificados. ÃÂ hora de atrair quem busca e pode pagar pelo seu valor.
                     </p>
                 </div>
                 <div className="bg-primary text-white border-2 border-dark p-5 shadow-[4px_4px_0px_#121212] max-w-md transform -rotate-1 hover:rotate-0 transition-transform relative">
                     <TrendingDown className="w-6 h-6 mb-3 opacity-90" />
                     <p className="font-bold text-lg md:text-xl tracking-normal">
-                        E no final do mÃªs, o WhatsApp estÃ¡ cheio de "qual o valor?". A agenda, com buracos.
+                        E no final do mÃÂªs, o WhatsApp estÃÂ¡ cheio de "qual o valor?". A agenda, com buracos.
                     </p>
                 </div>
             </RevealUp>
             
             <RevealUp className="lg:col-span-6 relative h-[400px] md:h-[450px]">
                 <div className="absolute top-0 right-0 w-full h-full border-2 border-dark bg-white z-0 transform translate-x-3 translate-y-3"></div>
-                <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=800&q=80" alt="AnÃ¡lise de Dados" className="absolute inset-0 w-full h-full object-cover border-2 border-dark grayscale contrast-125 z-10" />
+                <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=800&q=80" alt="AnÃÂ¡lise de Dados" className="absolute inset-0 w-full h-full object-cover border-2 border-dark grayscale contrast-125 z-10" />
                 <div className="absolute bottom-4 left-4 z-20 bg-white border-2 border-dark px-3 py-1.5 font-bold uppercase tracking-widest text-[10px] shadow-[2px_2px_0px_#FF3C00] flex items-center gap-2">
                     <PieChart className="w-3 h-3 text-primary" />
                     Data Analysis // 2026
@@ -330,14 +330,14 @@ export default function App() {
         <div className="max-w-7xl mx-auto relative z-10">
             <RevealUp className="max-w-3xl mb-16 text-dark">
                 <span className="bg-primary text-dark font-bold px-3 py-1.5 uppercase tracking-widest text-[10px] border-2 border-dark inline-flex items-center gap-2 mb-6 shadow-[2px_2px_0px_#121212]">
-                    <Layers className="w-3.5 h-3.5" /> O MÃ©todo
+                    <Layers className="w-3.5 h-3.5" /> O MÃÂ©todo
                 </span>
                 <h2 className="text-4xl md:text-6xl font-black font-outfit leading-[1] tracking-normal uppercase mb-6">
-                    O anÃºncio Ã© o<br/>Ãºltimo passo.<br/>
-                    <span className="text-primary">A estratÃ©gia vende antes.</span>
+                    O anÃÂºncio ÃÂ© o<br/>ÃÂºltimo passo.<br/>
+                    <span className="text-primary">A estratÃÂ©gia vende antes.</span>
                 </h2>
                 <p className="text-dark/80 text-lg font-medium border-l-4 border-primary pl-4">
-                    Antes de apertar qualquer botÃ£o, construÃ­mos um posicionamento magnÃ©tico. Focamos no paciente ideal que busca os seus serviÃ§os high-ticket e blindamos a sua clÃ­nica contra quem sÃ³ procura preÃ§o.
+                    Antes de apertar qualquer botÃÂ£o, construÃÂ­mos um posicionamento magnÃÂ©tico. Focamos no paciente ideal que busca os seus serviÃÂ§os high-ticket e blindamos a sua clÃÂ­nica contra quem sÃÂ³ procura preÃÂ§o.
                 </p>
             </RevealUp>
             
@@ -348,12 +348,12 @@ export default function App() {
                         <div className="w-12 h-12 bg-white group-hover:bg-primary transition-colors duration-300 border-2 border-dark shadow-[2px_2px_0px_#121212] flex items-center justify-center flex-shrink-0">
                             <Search className="w-6 h-6 text-primary group-hover:text-dark transition-colors duration-300" />
                         </div>
-                        <h3 className="font-black text-2xl md:text-3xl font-outfit tracking-normal uppercase">DiagnÃ³stico ClÃ­nico & Posicionamento</h3>
+                        <h3 className="font-black text-2xl md:text-3xl font-outfit tracking-normal uppercase">DiagnÃÂ³stico ClÃÂ­nico & Posicionamento</h3>
                     </div>
                     <ul className="space-y-3 mt-auto">
                         <li className="flex items-start gap-2">
                             <div className="w-2 h-2 bg-primary border border-dark mt-1.5 flex-shrink-0"></div>
-                            <p className="text-dark/90 font-medium text-base">Entendimento do seu procedimento mais rentÃ¡vel.</p>
+                            <p className="text-dark/90 font-medium text-base">Entendimento do seu procedimento mais rentÃÂ¡vel.</p>
                         </li>
                         <li className="flex items-start gap-2">
                             <div className="w-2 h-2 bg-primary border border-dark mt-1.5 flex-shrink-0"></div>
@@ -368,16 +368,16 @@ export default function App() {
                         <div className="w-12 h-12 bg-white group-hover:bg-primary transition-colors duration-300 border-2 border-dark shadow-[2px_2px_0px_#121212] flex items-center justify-center flex-shrink-0">
                             <Target className="w-6 h-6 text-primary group-hover:text-dark transition-colors duration-300" />
                         </div>
-                        <h3 className="font-black text-2xl md:text-3xl font-outfit tracking-normal uppercase">CaptaÃ§Ã£o CirÃºrgica</h3>
+                        <h3 className="font-black text-2xl md:text-3xl font-outfit tracking-normal uppercase">CaptaÃÂ§ÃÂ£o CirÃÂºrgica</h3>
                     </div>
                     <ul className="space-y-3 mt-auto">
                         <li className="flex items-start gap-2">
                             <div className="w-2 h-2 bg-primary border border-dark mt-1.5 flex-shrink-0"></div>
-                            <p className="text-dark/90 font-medium text-base">Campanhas segmentadas para o pÃºblico A/B da sua regiÃ£o.</p>
+                            <p className="text-dark/90 font-medium text-base">Campanhas segmentadas para o pÃÂºblico A/B da sua regiÃÂ£o.</p>
                         </li>
                         <li className="flex items-start gap-2">
                             <div className="w-2 h-2 bg-primary border border-dark mt-1.5 flex-shrink-0"></div>
-                            <p className="text-dark/90 font-medium text-base">Leads que buscam transformaÃ§Ã£o real, nÃ£o apenas preÃ§o.</p>
+                            <p className="text-dark/90 font-medium text-base">Leads que buscam transformaÃÂ§ÃÂ£o real, nÃÂ£o apenas preÃÂ§o.</p>
                         </li>
                     </ul>
                 </RevealUp>
@@ -388,12 +388,12 @@ export default function App() {
                         <div className="w-12 h-12 bg-white group-hover:bg-primary transition-colors duration-300 border-2 border-dark shadow-[2px_2px_0px_#121212] flex items-center justify-center flex-shrink-0">
                             <Zap className="w-6 h-6 text-primary group-hover:text-dark transition-colors duration-300" />
                         </div>
-                        <h3 className="font-black text-2xl md:text-3xl font-outfit tracking-normal uppercase">AnÃºncios que Geram Desejo</h3>
+                        <h3 className="font-black text-2xl md:text-3xl font-outfit tracking-normal uppercase">AnÃÂºncios que Geram Desejo</h3>
                     </div>
                     <ul className="space-y-3 mt-auto">
                         <li className="flex items-start gap-2">
                             <div className="w-2 h-2 bg-primary border border-dark mt-1.5 flex-shrink-0"></div>
-                            <p className="text-dark/90 font-medium text-base">Criativos que valorizam a beleza e autoridade do seu espaÃ§o.</p>
+                            <p className="text-dark/90 font-medium text-base">Criativos que valorizam a beleza e autoridade do seu espaÃÂ§o.</p>
                         </li>
                         <li className="flex items-start gap-2">
                             <div className="w-2 h-2 bg-primary border border-dark mt-1.5 flex-shrink-0"></div>
@@ -408,16 +408,16 @@ export default function App() {
                         <div className="w-12 h-12 bg-white group-hover:bg-primary transition-colors duration-300 border-2 border-dark shadow-[2px_2px_0px_#121212] flex items-center justify-center flex-shrink-0">
                             <BarChart2 className="w-6 h-6 text-primary group-hover:text-dark transition-colors duration-300" />
                         </div>
-                        <h3 className="font-black text-2xl md:text-3xl font-outfit tracking-normal uppercase">Escala PrevisÃ­vel</h3>
+                        <h3 className="font-black text-2xl md:text-3xl font-outfit tracking-normal uppercase">Escala PrevisÃÂ­vel</h3>
                     </div>
                     <ul className="space-y-3 mt-auto">
                         <li className="flex items-start gap-2">
                             <div className="w-2 h-2 bg-primary border border-dark mt-1.5 flex-shrink-0"></div>
-                            <p className="text-dark/90 font-medium text-base">OtimizaÃ§Ã£o semanal com foco no retorno, previsibilidade e lucro.</p>
+                            <p className="text-dark/90 font-medium text-base">OtimizaÃÂ§ÃÂ£o semanal com foco no retorno, previsibilidade e lucro.</p>
                         </li>
                         <li className="flex items-start gap-2">
                             <div className="w-2 h-2 bg-primary border border-dark mt-1.5 flex-shrink-0"></div>
-                            <p className="text-dark/90 font-medium text-base">Ajustes cirÃºrgicos para atrair cada vez mais e melhor.</p>
+                            <p className="text-dark/90 font-medium text-base">Ajustes cirÃÂºrgicos para atrair cada vez mais e melhor.</p>
                         </li>
                     </ul>
                 </RevealUp>
@@ -434,46 +434,46 @@ export default function App() {
                     <Filter className="w-3.5 h-3.5" /> O Filtro
                 </span>
                 <h2 className="text-4xl md:text-5xl font-black font-outfit tracking-normal uppercase leading-[1] mb-6">
-                    CritÃ©rios de parceria.
+                    CritÃÂ©rios de parceria.
                 </h2>
                 <p className="text-white/70 font-medium text-base leading-relaxed">
-                    NÃ£o assumimos qualquer clÃ­nica. A nossa operaÃ§Ã£o exige um nÃ­vel de entrega e profissionalismo de ponta que apenas profissionais dedicados possuem.
+                    NÃÂ£o assumimos qualquer clÃÂ­nica. A nossa operaÃÂ§ÃÂ£o exige um nÃÂ­vel de entrega e profissionalismo de ponta que apenas profissionais dedicados possuem.
                 </p>
             </RevealUp>
             
             <div className="lg:col-span-8 grid md:grid-cols-2 gap-6">
                 <RevealLeft className="bg-primary text-dark border-2 border-dark p-6 md:p-8 shadow-[4px_4px_0px_#FEF7EF] flex flex-col hover:translate-y-[-2px] hover:shadow-[6px_6px_0px_#FEF7EF] transition-all">
-                    <h3 className="text-2xl font-black font-outfit uppercase mb-6 pb-3 border-b-2 border-dark">A Nexbrand Ã© para quem:</h3>
+                    <h3 className="text-2xl font-black font-outfit uppercase mb-6 pb-3 border-b-2 border-dark">A Nexbrand ÃÂ© para quem:</h3>
                     <ul className="space-y-4 flex-grow">
                         <li className="flex items-start gap-3">
                             <Check className="w-5 h-5 flex-shrink-0 mt-0.5" />
-                            <p className="font-bold text-base">Tem uma clÃ­nica ou consultÃ³rio e procura escala real.</p>
+                            <p className="font-bold text-base">Tem uma clÃÂ­nica ou consultÃÂ³rio e procura escala real.</p>
                         </li>
                         <li className="flex items-start gap-3">
                             <Check className="w-5 h-5 flex-shrink-0 mt-0.5" />
-                            <p className="font-bold text-base">Ã um excelente profissional, mas trava na atraÃ§Ã£o de pacientes.</p>
+                            <p className="font-bold text-base">ÃÂ um excelente profissional, mas trava na atraÃÂ§ÃÂ£o de pacientes.</p>
                         </li>
                         <li className="flex items-start gap-3">
                             <Check className="w-5 h-5 flex-shrink-0 mt-0.5" />
-                            <p className="font-bold text-base">Quer parar de brigar por preÃ§o e focar em procedimentos high-ticket.</p>
+                            <p className="font-bold text-base">Quer parar de brigar por preÃÂ§o e focar em procedimentos high-ticket.</p>
                         </li>
                     </ul>
                 </RevealLeft>
                 
                 <RevealRight className="bg-white text-dark border-2 border-dark p-6 md:p-8 shadow-[4px_4px_0px_#FEF7EF] flex flex-col hover:translate-y-[-2px] hover:shadow-[6px_6px_0px_#FEF7EF] transition-all opacity-95">
-                    <h3 className="text-2xl font-black font-outfit uppercase mb-6 pb-3 border-b-2 border-dark">NÃ£o somos para si se:</h3>
+                    <h3 className="text-2xl font-black font-outfit uppercase mb-6 pb-3 border-b-2 border-dark">NÃÂ£o somos para si se:</h3>
                     <ul className="space-y-4 flex-grow">
                         <li className="flex items-start gap-3">
                             <X className="w-5 h-5 flex-shrink-0 mt-0.5 text-primary" />
-                            <p className="font-bold text-base">Acredita em clÃ­nicas lotadas da noite para o dia com "hacks".</p>
+                            <p className="font-bold text-base">Acredita em clÃÂ­nicas lotadas da noite para o dia com "hacks".</p>
                         </li>
                         <li className="flex items-start gap-3">
                             <X className="w-5 h-5 flex-shrink-0 mt-0.5 text-primary" />
-                            <p className="font-bold text-base">Presta um mau atendimento e acha que o marketing vai salvÃ¡-lo.</p>
+                            <p className="font-bold text-base">Presta um mau atendimento e acha que o marketing vai salvÃÂ¡-lo.</p>
                         </li>
                         <li className="flex items-start gap-3">
                             <X className="w-5 h-5 flex-shrink-0 mt-0.5 text-primary" />
-                            <p className="font-bold text-base">NÃ£o tem estrutura para receber a alta demanda de pacientes.</p>
+                            <p className="font-bold text-base">NÃÂ£o tem estrutura para receber a alta demanda de pacientes.</p>
                         </li>
                     </ul>
                 </RevealRight>
@@ -489,7 +489,7 @@ export default function App() {
             <RevealLeft className="relative w-full max-w-[380px]">
                 <div className="absolute inset-0 border-2 border-dark bg-white translate-x-4 translate-y-4 z-0"></div>
                 <div className="aspect-[3/4] border-2 border-dark bg-white relative z-10 overflow-hidden group">
-                    <img src="/carlos.png" alt="Carlos Henrique - Founder & CEO" className="w-full h-full object-cover grayscale opacity-90 transition-all duration-700 group-hover:scale-105 group-hover:grayscale-0 group-hover:opacity-100" />
+                    <img src="/carlos.png.jpg" alt="Carlos Henrique - Founder & CEO" className="w-full h-full object-cover grayscale opacity-90 transition-all duration-700 group-hover:scale-105 group-hover:grayscale-0 group-hover:opacity-100" />
                 </div>
                 <div className="absolute -bottom-4 -left-4 bg-white border-2 border-dark px-4 py-2 shadow-[4px_4px_0px_#121212] z-20 transform -rotate-2">
                     <span className="font-bold text-sm uppercase tracking-widest">Founder & CEO</span>
@@ -504,7 +504,7 @@ export default function App() {
                 <div className="bg-white border-2 border-dark p-6 md:p-8 shadow-[4px_4px_0px_#121212] max-w-2xl relative">
                     <Quote className="w-10 h-10 text-primary/20 absolute top-4 left-4 fill-current" />
                     <p className="text-xl md:text-2xl leading-snug font-bold relative z-10 pt-4">
-                        "Meu objetivo nÃ£o Ã© ser apenas um apertador de botÃµes, mas sim colocar estratÃ©gias que tragam resultados para clÃ­nicas e profissionais de estÃ©tica."
+                        "Meu objetivo nÃÂ£o ÃÂ© ser apenas um apertador de botÃÂµes, mas sim colocar estratÃÂ©gias que tragam resultados para clÃÂ­nicas e profissionais de estÃÂ©tica."
                     </p>
                 </div>
                 
@@ -543,7 +543,7 @@ export default function App() {
                 <div className="bg-white border-2 border-dark p-4 md:p-6 inline-flex items-center gap-4 shadow-[4px_4px_0px_#FF3C00] transform rotate-1">
                     <Lock className="w-6 h-6 text-dark flex-shrink-0" />
                     <p className="text-dark text-lg md:text-xl font-bold uppercase tracking-normal text-left">
-                        Abrimos apenas <span className="text-primary font-black">2 novas vagas</span> por mÃªs<br className="hidden md:block" /> para gestÃ£o de trÃ¡fego. 
+                        Abrimos apenas <span className="text-primary font-black">2 novas vagas</span> por mÃÂªs<br className="hidden md:block" /> para gestÃÂ£o de trÃÂ¡fego. 
                     </p>
                 </div>
             </RevealUp>
@@ -568,7 +568,7 @@ export default function App() {
                 
                 <div className="text-[10px] md:text-xs tracking-widest uppercase flex flex-col md:flex-row items-center justify-center gap-4 font-bold text-dark/50">
                     <span>&copy; 2026 NEXBRAND.</span>
-                    <span className="hidden md:inline text-primary/50">â¢</span>
+                    <span className="hidden md:inline text-primary/50">Ã¢ÂÂ¢</span>
                     <span>DESIGN BY CARLOS HENRIQUE.</span>
                 </div>
             </div>
